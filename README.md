@@ -8,7 +8,7 @@ An end-to-end scikit-learn / imbalanced-learn classification pipeline for predic
 
 | Model | Test Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|
-| KNN | 88.41% | 52.78% | 23.85% | .325 |
+| KNN | 88.41% | 52.78% | 23.85% | 0.325 |
 | Random Forest | 85.94% | 41.34% | 43.83% | **0.426** (best F1) |
 | Naive Bayes | 84.82% | 37.07% | 39.81% | 0.384 |
 | Logistic Regression | 76.84% | 27.19% | **56.48%** (best recall) | 0.367 |
