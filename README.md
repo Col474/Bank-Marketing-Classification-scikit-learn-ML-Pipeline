@@ -8,11 +8,11 @@ An end-to-end scikit-learn / imbalanced-learn classification pipeline for predic
 
 | Model | Test Accuracy | Precision | Recall | F1 |
 |---|---|---|---|---|
-| KNN | 88.5% | 53.7% | 25.8% | — |
-| Random Forest | — | 41.6% | 44.1% | **0.428** (best F1) |
-| Naive Bayes | — | 37.1% | 39.8% | — |
-| Logistic Regression | — | 27.2% | **56.5%** (best recall) | — |
-| Gradient Boosting | 88.0% | **49.4%** (best precision) | 34.0% | — |
+| KNN | 88.41% | 52.78% | 23.85% | .325 |
+| Random Forest | 85.94% | 41.34% | 43.83% | **0.426** (best F1) |
+| Naive Bayes | 84.82% | 37.07% | 39.81% | 0.384 |
+| Logistic Regression | 76.84% | 27.19% | **56.48%** (best recall) | 0.367 |
+| Gradient Boosting | 88.03% | **49.44%** (best precision) | 33.95% | 0.403 |
 
 Class imbalance in the target variable made accuracy a misleading metric on its own — high-accuracy models like KNN achieved that by under-predicting the minority class. **Random Forest gave the best precision/recall balance**, with the highest F1 score (0.428) among all five models — beating Naive Bayes (F1 ≈ 0.384) despite the latter's slightly higher raw recall. Logistic Regression maximised recall at the cost of precision; Gradient Boosting maximised precision at the cost of recall. Model choice in practice should depend on whether false positives or false negatives are more costly for the use case.
 
